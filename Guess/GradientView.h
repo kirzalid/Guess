@@ -1,14 +1,17 @@
 //
-//  ViewController.h
+//  GradientView.h
 //  Guess
 //
 //  Created by Chris on 4/28/13.
 //  Copyright (c) 2013 Chris. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-#import "Global.h"
 
-@interface ViewController : UIViewController
+/*
+ 在view中添加渐变
+ */
+#import <UIKit/UIKit.h>
+
+@interface GradientView : UIView
 
 @end

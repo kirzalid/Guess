@@ -24,6 +24,9 @@
 		83607FBA172CD4D700F1CD17 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83607F92172CD4D600F1CD17 /* Foundation.framework */; };
 		83607FC2172CD4D700F1CD17 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 83607FC0172CD4D700F1CD17 /* InfoPlist.strings */; };
 		83607FC5172CD4D700F1CD17 /* GuessTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83607FC4172CD4D700F1CD17 /* GuessTests.m */; };
+		83607FD8172CE5FB00F1CD17 /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 83607FD7172CE5FB00F1CD17 /* Tools.m */; };
+		83607FDB172CEF2100F1CD17 /* URLCacheView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83607FDA172CEF2100F1CD17 /* URLCacheView.m */; };
+		8372A5D3172CF1630095A1FD /* GradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8372A5D2172CF1630095A1FD /* GradientView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +63,13 @@
 		83607FC1172CD4D700F1CD17 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		83607FC3172CD4D700F1CD17 /* GuessTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GuessTests.h; sourceTree = "<group>"; };
 		83607FC4172CD4D700F1CD17 /* GuessTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GuessTests.m; sourceTree = "<group>"; };
+		83607FD6172CE5FB00F1CD17 /* Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
+		83607FD7172CE5FB00F1CD17 /* Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tools.m; sourceTree = "<group>"; };
+		83607FD9172CEF2100F1CD17 /* URLCacheView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLCacheView.h; sourceTree = "<group>"; };
+		83607FDA172CEF2100F1CD17 /* URLCacheView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLCacheView.m; sourceTree = "<group>"; };
+		8372A5D1172CF1630095A1FD /* GradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientView.h; sourceTree = "<group>"; };
+		8372A5D2172CF1630095A1FD /* GradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientView.m; sourceTree = "<group>"; };
+		8372A5D4172CF2B90095A1FD /* Global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +129,12 @@
 		83607F96172CD4D600F1CD17 /* Guess */ = {
 			isa = PBXGroup;
 			children = (
+				8372A5D4172CF2B90095A1FD /* Global.h */,
+				83607FD9172CEF2100F1CD17 /* URLCacheView.h */,
+				83607FDA172CEF2100F1CD17 /* URLCacheView.m */,
+				8372A5D1172CF1630095A1FD /* GradientView.h */,
+				8372A5D2172CF1630095A1FD /* GradientView.m */,
+				83607FD5172CE5FB00F1CD17 /* Tools */,
 				83607F9F172CD4D700F1CD17 /* AppDelegate.h */,
 				83607FA0172CD4D700F1CD17 /* AppDelegate.m */,
 				83607FA8172CD4D700F1CD17 /* MainStoryboard_iPhone.storyboard */,
@@ -161,6 +177,15 @@
 				83607FC0172CD4D700F1CD17 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		83607FD5172CE5FB00F1CD17 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				83607FD6172CE5FB00F1CD17 /* Tools.h */,
+				83607FD7172CE5FB00F1CD17 /* Tools.m */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,6 +302,9 @@
 				83607F9D172CD4D700F1CD17 /* main.m in Sources */,
 				83607FA1172CD4D700F1CD17 /* AppDelegate.m in Sources */,
 				83607FB0172CD4D700F1CD17 /* ViewController.m in Sources */,
+				83607FD8172CE5FB00F1CD17 /* Tools.m in Sources */,
+				83607FDB172CEF2100F1CD17 /* URLCacheView.m in Sources */,
+				8372A5D3172CF1630095A1FD /* GradientView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,6 +495,7 @@
 				83607FCA172CD4D700F1CD17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		83607FCB172CD4D700F1CD17 /* Build configuration list for PBXNativeTarget "GuessTests" */ = {
 			isa = XCConfigurationList;
@@ -475,6 +504,7 @@
 				83607FCD172CD4D700F1CD17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
