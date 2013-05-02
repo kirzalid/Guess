@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		833ABC1C1732001800155966 /* URLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 833ABC1B1732001800155966 /* URLConnection.m */; };
 		83607F91172CD4D600F1CD17 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83607F90172CD4D600F1CD17 /* UIKit.framework */; };
 		83607F93172CD4D600F1CD17 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83607F92172CD4D600F1CD17 /* Foundation.framework */; };
 		83607F95172CD4D600F1CD17 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83607F94172CD4D600F1CD17 /* CoreGraphics.framework */; };
@@ -40,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		833ABC1A1732001800155966 /* URLConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLConnection.h; sourceTree = "<group>"; };
+		833ABC1B1732001800155966 /* URLConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLConnection.m; sourceTree = "<group>"; };
 		83607F8D172CD4D600F1CD17 /* Guess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guess.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83607F90172CD4D600F1CD17 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		83607F92172CD4D600F1CD17 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -134,6 +137,8 @@
 				83607FDA172CEF2100F1CD17 /* URLCacheView.m */,
 				8372A5D1172CF1630095A1FD /* GradientView.h */,
 				8372A5D2172CF1630095A1FD /* GradientView.m */,
+				833ABC1A1732001800155966 /* URLConnection.h */,
+				833ABC1B1732001800155966 /* URLConnection.m */,
 				83607FD5172CE5FB00F1CD17 /* Tools */,
 				83607F9F172CD4D700F1CD17 /* AppDelegate.h */,
 				83607FA0172CD4D700F1CD17 /* AppDelegate.m */,
@@ -305,6 +310,7 @@
 				83607FD8172CE5FB00F1CD17 /* Tools.m in Sources */,
 				83607FDB172CEF2100F1CD17 /* URLCacheView.m in Sources */,
 				8372A5D3172CF1630095A1FD /* GradientView.m in Sources */,
+				833ABC1C1732001800155966 /* URLConnection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

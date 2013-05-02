@@ -18,6 +18,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    NSLog(@"start here");
+    
+    URLConnection *urlConnection = [[URLConnection alloc]init];
+    [urlConnection start:nil];
 }
 
 - (void)didReceiveMemoryWarning
