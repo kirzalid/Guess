@@ -20,8 +20,14 @@
 	// Do any additional setup after loading the view, typically from a nib.
     NSLog(@"start here");
     
-    URLConnection *urlConnection = [[URLConnection alloc]init];
-    [urlConnection start:nil];
+//    [Tools phoneNumber];
+    
+    
+//    NSArray *array = [NSArray arrayWithObject:@"HaHa"];
+//	NSLog(@"%@", [array objectAtIndex:1]);
+    
+//    URLConnection *urlConnection = [[URLConnection alloc]init];
+//    [urlConnection start:nil];
 }
 
 - (void)didReceiveMemoryWarning

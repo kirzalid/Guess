@@ -13,7 +13,8 @@
 
 #endif
 
+#import "Tools.h"
 
 #import "URLCacheView.h"  //网络请求缓存
 #import "GradientView.h"  //渐变色
-#import "URLConnection.h"   //下载图片显示进度条
+#import "URLConnection.h" //下载图片显示进度条

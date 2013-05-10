@@ -6,6 +6,10 @@
 //  Copyright (c) 2013 Chris. All rights reserved.
 //
 
+
+/*
+ 下载图片进度条
+ */
 #import <Foundation/Foundation.h>
 
 @interface URLConnection : NSObject

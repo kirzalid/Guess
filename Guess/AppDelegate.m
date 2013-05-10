@@ -7,12 +7,35 @@
 //
 
 #import "AppDelegate.h"
+//#import "UncaughtExceptionHandler.h"
 
+void UncaughtExceptionHandler(NSException *exception) {
+	NSArray *arr = [exception callStackSymbols];
+	NSString *reason = [exception reason];
+	NSString *name = [exception name];
+	NSLog(@"~~~###");
+	NSString *urlStr = [NSString stringWithFormat:@"mailto://kirzalid@163.com?subject=bug报告&body=感谢您的配合!<br><br><br>"
+						"\n错误详情:<br>%@<br>--------------------------<br>%@<br>---------------------<br>%@",
+						name,reason,[arr componentsJoinedByString:@"<br>"]];
+	
+	NSURL *url = [NSURL URLWithString:[urlStr stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+    NSLog(@"~~~###  %@",urlStr);
+	[[UIApplication sharedApplication] openURL:url];
+}
 @implementation AppDelegate
+
+//- (void)installUncaughtExceptionHandler
+//{
+//	InstallUncaughtExceptionHandler();
+//}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    NSLog(@"here~");
+//    [self installUncaughtExceptionHandler];
+    NSSetUncaughtExceptionHandler (&UncaughtExceptionHandler);
+    NSLog(@"phone number is %@",[Tools phoneNumber]);
     return YES;
 }
 							
