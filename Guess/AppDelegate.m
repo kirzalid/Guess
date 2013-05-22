@@ -35,7 +35,7 @@ void UncaughtExceptionHandler(NSException *exception) {
     NSLog(@"here~");
 //    [self installUncaughtExceptionHandler];
     NSSetUncaughtExceptionHandler (&UncaughtExceptionHandler);
-    NSLog(@"phone number is %@",[Tools phoneNumber]);
+//    NSLog(@"phone number is %@",[Tools phoneNumber]);
     return YES;
 }
 							
